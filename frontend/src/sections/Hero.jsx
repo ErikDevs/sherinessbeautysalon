@@ -33,7 +33,7 @@ const Hero = () => {
         className="w-full flex justify-center items-center"
       >
         <motion.img
-          className="object-cover absolute -bottom-[35rem] z-10 rounded-[32px]"
+          className="object-cover absolute top-[80vh] z-10 rounded-[32px]"
           src="/image4.jpg"
           alt=""
           inherit={{ opacity: 0 }}
