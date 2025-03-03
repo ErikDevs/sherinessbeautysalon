@@ -10,45 +10,23 @@ body {
   scroll-behavior: smooth;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
-  grid-template-rows: auto auto auto; /* Auto adjust height */
-  gap: 10px;
-  max-width: 80vw; /* Adjust based on your needs */
+/* CSS Styles (styles.css) */
+.masonry-grid {
+  display: flex;
   margin: auto;
-  grid-template-areas:
-    "img1 img1 img2 img3"
-    "img4 img5 img5 img3"
-    "img6 img6 img7 img7";
+  width: 80%;
 }
 
-/* Define grid areas */
-.img-1 {
-  grid-area: img1;
-} /* Large left */
-.img-2 {
-  grid-area: img2;
-} /* Small top middle */
-.img-3 {
-  grid-area: img3;
-} /* Tall right */
-.img-4 {
-  grid-area: img4;
-} /* Small bottom left */
-.img-5 {
-  grid-area: img5;
-} /* Large middle */
-.img-6 {
-  grid-area: img6;
-} /* Wide bottom */
-.img-7 {
-  grid-area: img7;
-} /* Large bottom right */
+.masonry-column {
+  padding-left: 10px; /* Space between columns */
+  background-clip: padding-box;
+}
+
+.masonry-item {
+  margin-bottom: 0.8rem;
+}
 
 .image {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fit within their area */
-  border-radius: 8px;
+  border-radius: 1rem;
 }

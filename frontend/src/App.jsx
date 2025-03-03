@@ -1,9 +1,8 @@
 import "./index.css";
 import AboutUs from "./sections/About";
 import Services from "./sections/Services";
-import GridGallery from "./sections/Portfolio";
-
 import Hero from "./sections/Hero";
+import GridComponent from "./sections/Portfolio";
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       <Hero />
       <AboutUs />
       <Services />
-      <GridGallery />
+      <GridComponent />
     </main>
   );
 }

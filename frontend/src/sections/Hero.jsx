@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import AboutUs from "./About";
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -9,16 +10,19 @@ const Hero = () => {
     offset: ["start end", "end start"],
   });
 
-  // Animate the width from 50% to 100vw (full viewport width)
-  const width = useTransform(scrollYProgress, [0, 1], ["30%", "90vw"]);
-  const height = useTransform(scrollYProgress, [0, 1], ["100%", "90vh"]); // Expand height to fill viewport
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]); // Optional zoom effect
+  // Expand width and height
+  const width = useTransform(scrollYProgress, [0, 1], ["20%", "100%"]);
+  const height = useTransform(scrollYProgress, [0, 1], ["50%", "100%"]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
+
+  // Fade out effect when image is fully zoomed
+  const opacity = useTransform(scrollYProgress, [0.7, 1], [1, 0]);
 
   return (
-    <section className="w-full h-[100vh] mx-auto overflow-hidden">
+    <section className="w-full mx-auto overflow-hidden">
       <Header />
-      <div className="flex w-full flex-col justify-center items-center h-full ">
-        <h1 className="text-6xl font-bold text-center ">
+      <div className="flex w-full flex-col justify-center items-center h-[100vh]">
+        <h1 className="text-7xl font-extrabold text-center">
           Unveil Your <span className="font-script text-accent">Beauty</span>,{" "}
           <br /> Embrace Your Confidence
         </h1>
@@ -28,20 +32,22 @@ const Hero = () => {
           Kenya. Let us pamper you with the best in beauty care.
         </p>
       </div>
+
+      {/* Image that expands and fades out */}
       <div
         ref={containerRef}
         className="w-full flex justify-center items-center"
       >
         <motion.img
-          className="object-cover absolute top-[70vh] z-10 rounded-[32px]"
+          className="object-cover absolute -bottom-[20vh] z-10 rounded-[32px]"
           src="/image4.jpg"
           alt=""
-          inherit={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          style={{ width, height, scale }} // Bind animation properties
+          style={{ width, height, scale, opacity }}
           transition={{ type: "tween", ease: easeInOut, duration: 0.5 }}
         />
       </div>
+
+      {/* New Section Revealed After Transition */}
 
       <img
         src="/leave2.png"

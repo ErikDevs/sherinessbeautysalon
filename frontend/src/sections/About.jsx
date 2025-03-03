@@ -2,9 +2,11 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 const AboutUs = () => {
   return (
-    <section className="mt-[100vh] py-6 bg-accent rounded-3xl  text-secondary">
+    <section className="mt-32 p-6 bg-accent text-secondary">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-script text-4xl text-center">About Us</h1>
+        <h1 className="font-script text-4xl text-center text-primary">
+          About Us
+        </h1>
         <p className="mt-8 max-w-5xl text-center">
           At Sheriness Beauty Salon, we believe that beauty is more than just
           appearance—its about feeling confident, refreshed, and empowered. Our
