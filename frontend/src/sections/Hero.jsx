@@ -14,7 +14,7 @@ const Hero = () => {
           Unveil Your <span className="font-script text-accent">Beauty</span>,{" "}
           Embrace Your Confidence
         </h1>
-        <p className=" text-center  text-sm md:text-lg mt-8 md:text-left">
+        <p className="text-sm md:text-lg mt-4">
           Welcome to Shariness Beauty Salon, where elegance meets expertise.
           Step into a world of relaxation and transformation right here in
           Kenya. Let us pamper you with the best in beauty care.
@@ -22,7 +22,7 @@ const Hero = () => {
 
         <Button
           name="Book Now"
-          className="cursor-pointer mt-8  max-w-sm bg-gradient-to-t from-orange-500 to-yellow-500"
+          className="cursor-pointer mt-4  max-w-sm bg-gradient-to-t from-orange-500 to-yellow-500"
         />
       </div>
 
