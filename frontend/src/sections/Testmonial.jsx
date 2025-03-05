@@ -93,18 +93,18 @@ const Testmonial = () => {
         ))}
       </Carousel>
       <div className="flex w-full justify-center  mt-8">
-        <div className="flex flex-col  bg-secondary/25 drop-shadow-md text-primary p-6 rounded-2xl w-full max-w-2xl">
+        <div className="flex flex-col  bg-secondary/40 drop-shadow-md text-primary p-6 rounded-2xl w-full max-w-2xl">
           <h2 className="text-center font-bold text-2xl my-2">
             Join Our Journey to Greatness{" "}
           </h2>
-          <form className="flex justify-between" action="">
+          <form className="flex justify-between text-secondary" action="">
             <input
               type="text"
-              className="flex-1 p-2 rounded-l-xl"
+              className="flex-1 p-2 rounded-l-xl outline-none"
               placeholder="Enter your email"
             />
             <button
-              className="px-6 rounded-r-xl py-3 bg-gradient-to-tr from-pink-500 to-purple-500"
+              className="px-6 rounded-r-xl py-3 ml-2 text-primary bg-gradient-to-tr from-pink-500 to-purple-500"
               type="submit"
             >
               Send

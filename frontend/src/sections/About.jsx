@@ -18,13 +18,11 @@ const statements = [
 ];
 const AboutUs = () => {
   return (
-    <section className="-mt-6 pt-24 pb-8 bg-gradient-to-bl from-pink-600 to-purple-500 text-secondary">
+    <section className="-mt-6 pt-24 pb-8 bg-gradient-to-bl from-purple-500 to-purple-600 text-secondary">
       {/* mission and vision */}
       <div className="flex justify-center flex-col md:flex-row  items-center">
         <div className="flex mt-8 flex-col">
-          <h1 className="font-script text-4xl font-bold text-primary">
-            Who we are
-          </h1>
+          <h1 className="font-script text-5xl text-primary">Who we are</h1>
           <p className="mt-8 max-w-md">
             At Sheriness Beauty Salon, we believe that beauty is more than just
             appearance—its about feeling confident, refreshed, and empowered.
