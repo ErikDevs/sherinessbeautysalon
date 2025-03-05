@@ -14,11 +14,11 @@ body {
 .masonry-grid {
   display: flex;
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .masonry-column {
-  padding-left: 10px; /* Space between columns */
+  padding-left: 0.8rem; /* Space between columns */
   background-clip: padding-box;
 }
 

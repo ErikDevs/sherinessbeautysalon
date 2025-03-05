@@ -3,7 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="mt-16">
-      <h2 className="font-bold text-3xl text-center my-4">We are located at</h2>
+      <h2 className="text-5xl text-center font-script my-4">
+        We are located at
+      </h2>
       <iframe
         title="Google Map of Ruiru, Kenya"
         width="600"

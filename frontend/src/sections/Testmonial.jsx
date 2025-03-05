@@ -97,14 +97,17 @@ const Testmonial = () => {
           <h2 className="text-center font-bold text-2xl my-2">
             Join Our Journey to Greatness{" "}
           </h2>
-          <form className="flex justify-between text-secondary" action="">
+          <form
+            className="flex justify-between flex-col gap-y-2 md:flex-row text-secondary"
+            action=""
+          >
             <input
               type="text"
-              className="flex-1 p-2 rounded-l-xl outline-none"
+              className="flex-1  w-full px-6 py-3 rounded-2xl  outline-none"
               placeholder="Enter your email"
             />
             <button
-              className="px-6 rounded-r-xl py-3 ml-2 text-primary bg-gradient-to-tr from-pink-500 to-purple-500"
+              className="px-6 rounded-2xl  py-3 ml-2 text-primary bg-gradient-to-tr from-pink-500 to-purple-500"
               type="submit"
             >
               Send
