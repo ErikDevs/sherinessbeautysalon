@@ -61,7 +61,7 @@ const AboutUs = () => {
       </div>
 
       {/* commitment */}
-      <div className="mt-8 w-full flex-col items-center gap-8 flex justify-center ">
+      <div className="mt-8 w-full px-6 flex-col items-center gap-8 flex justify-center ">
         <h2 className="text-xl font-bold font-sans text-primary">
           Our Commitment
         </h2>

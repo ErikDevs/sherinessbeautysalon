@@ -9,8 +9,8 @@ const Hero = () => {
     <section className="w-full relative h-svh mx-auto px-6 md:px-10 bg-gray-950 overflow-hidden">
       <Header />
 
-      <div className="flex flex-col gap-4 max-w-lg md:ml-52 h-svh justify-center text-primary">
-        <h1 className="text-5xl text-center md:text-left font-extrabold">
+      <div className="flex flex-col absolute z-10 gap-4 max-w-lg md:ml-52 h-svh px-6 md:px-0 justify-center text-primary">
+        <h1 className="text-3xl md:text-5xl text-center md:text-left font-extrabold">
           Unveil Your <span className="font-script text-accent">Beauty</span>,{" "}
           Embrace Your Confidence
         </h1>
@@ -22,7 +22,7 @@ const Hero = () => {
 
         <Button
           name="Book Now"
-          className="cursor-pointer z-50 mt-8  bg-gradient-to-t from-orange-500 to-yellow-500"
+          className="cursor-pointer mt-8  max-w-sm bg-gradient-to-t from-orange-500 to-yellow-500"
         />
       </div>
 
@@ -31,22 +31,9 @@ const Hero = () => {
       {/* New Section Revealed After Transition */}
       <motion.img
         src="/model3.png"
-        className="absolute opacity-25 md:opacity-100 top-0 right-0 object-cover h-auto"
+        className="absolute opacity-35  md:opacity-100 top-0 right-0 object-cover h-auto"
         alt="default"
         transition={{ type: "tween", ease: easeInOut, duration: 0.5 }}
-      />
-
-      <img
-        src="/leave2.png"
-        className="absolute bottom-0 left-0 object-cover -z-10 h-auto"
-        alt="default"
-        width={100}
-      />
-      <img
-        src="/leaves.png"
-        className="absolute md:right-0 block top-[50%] -right-10 object-cover -z-10 h-auto"
-        alt="default"
-        width={100}
       />
     </section>
   );

@@ -10,7 +10,7 @@ import Footer from "./sections/Footer";
 
 function App() {
   return (
-    <main className="overflow-x-hidden font-sans bg-slate-100">
+    <main className="overflow-x-hidden font-sans  bg-slate-100">
       <Hero />
       <ConatctBanner />
       <AboutUs />
