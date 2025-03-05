@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 
 const services = [
   { title: "Hair Services", image: "/service2.jpg" },
@@ -20,11 +19,10 @@ const Services = () => {
               className="h-[315px] rounded-2xl shadow-md overflow-clip w-[350px]"
             >
               <div className="flex justify-center">
-                <h2 className="absolute text-center text-primary mt-4 text-xl">
+                <h2 className="absolute text-center text-secondary mt-4 text-xl">
                   {service.title}
                 </h2>
               </div>
-              <img src={service.image} alt="default" />
             </div>
           ))}
         </div>

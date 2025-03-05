@@ -6,7 +6,7 @@ export default {
       colors: {
         primary: "#ffffff", // White in HEX
         secondary: "#000000", // Black in HEX
-        accent: "#BB00FF", // Tailwind's pink-500 HEX equivalent
+        accent: "rgb(168 85 247 )", // Tailwind's pink-500 HEX equivalent
       },
       fontFamily: {
         script: ["MonteCarlo", "cursive"],

@@ -30,3 +30,35 @@ body {
   width: 100%;
   border-radius: 1rem;
 }
+
+.hero {
+  background-image: url(/herobg.png);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  width: 100vw;
+  height: 60%;
+  opacity: 1;
+}
+
+.hovered:hover .scale {
+  transform: scale(1.5);
+}
+
+.bg-image {
+  background-image: url("/service4.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.bg-image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
