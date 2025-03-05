@@ -38,7 +38,12 @@ const Header = () => {
       }`}
     >
       <nav className="md:flex hidden h-full justify-around items-center">
-        <img src="/sherinesslogo.png" width={200} alt="default" />
+        <img
+          src="/sherinesslogo.png"
+          width={200}
+          alt="default"
+          className="drop-shadow-sm"
+        />
 
         <ul className="flex gap-4 items-center">
           {navLinks.map((navLink, index) => (
@@ -62,18 +67,19 @@ const Header = () => {
       </nav>
 
       {/* mobile nav */}
-      <nav className="md:hidden w-full shadow-md">
+      <nav className="md:hidden w-full">
         <div className="flex items-center justify-between px-6 py-3">
-          <img src="/sherinesslogo.png" width={200} alt="default" />
+          <img src="/sherinesslogo.png" width={150} alt="default" />
           {isMenuOpen ? (
             <IoIosCloseCircleOutline
               size={48}
-              className="cursor-pointer"
+              className="cursor-pointer mx-2 text-primary"
               onClick={() => setisMenuOpen(false)}
             />
           ) : (
             <HiMiniBars3BottomRight
               size={48}
+              className="cursor-pointer mx-2 text-primary"
               onClick={() => setisMenuOpen(true)}
             />
           )}

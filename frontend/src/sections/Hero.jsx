@@ -9,12 +9,12 @@ const Hero = () => {
     <section className="w-full relative h-svh mx-auto px-6 md:px-10 bg-gray-950 overflow-hidden">
       <Header />
 
-      <div className="flex flex-col absolute z-10 gap-4 max-w-lg md:ml-52 h-svh px-6 md:px-0 justify-center text-primary">
-        <h1 className="text-3xl md:text-5xl text-center md:text-left font-extrabold">
+      <div className="flex flex-col absolute z-10 gap-4 max-w-2xl md:ml-52 h-svh px-6 md:px-0 justify-center text-primary">
+        <h1 className="text-4xl md:text-6xl font-extrabold">
           Unveil Your <span className="font-script text-accent">Beauty</span>,{" "}
           Embrace Your Confidence
         </h1>
-        <p className=" text-center mt-8 md:text-left">
+        <p className=" text-center  text-sm md:text-lg mt-8 md:text-left">
           Welcome to Shariness Beauty Salon, where elegance meets expertise.
           Step into a world of relaxation and transformation right here in
           Kenya. Let us pamper you with the best in beauty care.
