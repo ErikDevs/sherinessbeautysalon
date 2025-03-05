@@ -31,7 +31,7 @@ const Hero = () => {
       {/* New Section Revealed After Transition */}
       <motion.img
         src="/model3.png"
-        className="absolute opacity-35  md:opacity-100 top-0 right-0 object-cover h-auto"
+        className="absolute opacity-50  md:opacity-100 top-0 right-0 object-cover h-auto"
         alt="default"
         transition={{ type: "tween", ease: easeInOut, duration: 0.5 }}
       />
