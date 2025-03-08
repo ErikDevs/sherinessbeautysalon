@@ -8,13 +8,12 @@ const Hero = () => {
   return (
     <section className="w-full  relative h-svh items-center">
  
-        <div className="opacity-50 drop-shadow-md md:opacity-100">
+        <div className="opacity-50  drop-shadow-md md:opacity-100">
             <motion.img
                 initial={{opacity: 0 , scale: -1}}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 2, ease: "easeInOut" }}
                 src="/model3.png"
-                width={400}
                 className="absolute z-0  top-0 right-0 object-contain"
                 alt="default"
             />
