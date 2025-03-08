@@ -2,10 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-accent px-6 py-3 md:px-0">
-      <div className="flex flex-col-reverse justify-between items-center w-full md:flex-row">
-        <div className="mt-4 md:mt-0 w-full ml-0  md:ml-20  md:w-1/2">
-          <h1 className="font-script text-6xl">Ready to glow?</h1>
+    <section className="bg-purple-300 mt-16  rounded-2xl px-0 overflow-hidden md:px-0">
+      <div className="flex flex-col-reverse justify-end gap-4 items-center md:flex-row">
+        <div className="mx-4 mb-4 md:w-full">
+          <h1 className="font-script text-5xl">Ready to glow?</h1>
           <h2 className="font-medium">Book your appointment today!</h2>
           <form action="" className="flex flex-col mt-10 gap-y-2">
             <h1 className="font-bold text-4xl">Contact Us via Email</h1>
@@ -33,12 +33,12 @@ const Contact = () => {
               placeholder="Message"
               id=""
             ></textarea>
-            <button className="bg-gradient-to-tr from-purple-400 to-purple-500 px-6 py-4 rounded-full drop-shadow-lg mt-4 text-primary">
+            <button className="bg-gradient-to-tr from-purple-400 to-purple-500 drop-shadow-md px-6 py-4 rounded-full drop-shadow-lg mt-4 text-primary">
               Send
             </button>
           </form>
         </div>
-        <div className="w-full md:max-w-lg">
+        <div className="w-full">
           <img src="/model2.jpg" alt="" />
         </div>
       </div>

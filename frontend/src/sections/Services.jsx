@@ -10,12 +10,12 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="mt-16 content bg-accent -rotate-1 text-primary py-16 md:-ml-32">
-      <h2 className="font-script text-5xl text-center md:ml-32">
+    <section className="mt-16 content text-primary py-16 md:-ml-32">
+      <h2 className="font-script text-5xl text-center">
         Our Services
       </h2>
-      <div className="flex justify-center mt-8 md:ml-32">
-        <div className="flex flex-wrap gap-4 w-full justify-center">
+      <div className="flex justify-center mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}

@@ -18,12 +18,12 @@ const statements = [
 ];
 const AboutUs = () => {
   return (
-    <section className="-mt-6 pt-24 pb-8 bg-gradient-to-bl from-purple-500 to-purple-600 text-secondary">
+    <section className="mt-16 rounded-2xl p-2 drop-shadow-md bg-purple-200">
       {/* mission and vision */}
-      <div className="flex justify-center flex-col md:flex-row  items-center">
-        <div className="flex mt-8 flex-col">
-          <h1 className="font-script text-5xl text-primary">Who we are</h1>
-          <p className="mt-8 max-w-md">
+      <div className="flex justify-center gap-2 flex-col md:flex-row">
+        <div className="flex flex-col w-full bg-purple-400 h-fit p-6 rounded-xl text-primary">
+          <h1 className="font-script text-5xl text-secondary ">About Us</h1>
+          <p className="py-9 leading-relaxed">
             At Sheriness Beauty Salon, we believe that beauty is more than just
             appearance—its about feeling confident, refreshed, and empowered.
             Our experienced stylists and beauty experts are dedicated to
@@ -31,20 +31,18 @@ const AboutUs = () => {
             your unique style.
           </p>
         </div>
-        <div className="flex flex-col justify-center  mt-16 items-center p-6  md:flex-row gap-4">
           {statements?.map((statement, index) => (
             <div
               key={index}
-              className=" flex max-w-sm h-[300px] flex-col hovered bg-purple-100/60 rounded-2xl  overflow-clip justify-center items-center relative"
+              className=" flex  h-[300px] flex-col hovered bg-purple-100/60 rounded-xl  overflow-clip justify-center items-center relative"
             >
               <img
                 src={statement.src}
-                height={100}
                 alt="default"
                 className="scale transition-transform duration-300 ease-linear"
               />
 
-              <div className="max-w-sm absolute bg-black/75 h-full z-40  p-6">
+              <div className="absolute bg-black/75 h-full z-40  p-6">
                 <h2 className="mt-8 text-primary text-xl flex items-center gap-x-4 font-bold">
                   <i className="flex justify-center items-center bg-gradient-to-bl from-purple-500 to-pink-500 rounded-full p-2">
                     {statement.icon}
@@ -55,25 +53,25 @@ const AboutUs = () => {
               </div>
             </div>
           ))}
-        </div>
+
       </div>
 
       {/* commitment */}
-      <div className="mt-8 w-full px-6 flex-col items-center gap-8 flex justify-center ">
-        <h2 className="text-xl font-bold font-sans text-primary">
+      <div className="mt-2 w-full p-3 bg-purple-500 flex-col rounded-xl items-center gap-8 flex justify-center ">
+        <h2 className="text-lg font-bold font-sans text-secondary">
           Our Commitment
         </h2>
         <p className="text-start max-w-2xl">
-          <span className="font-bold text-primary">Quality Service</span> – We
+          <span className="font-bold text-secondary">Quality Service</span> – We
           use premium products and the latest techniques to ensure the best
           results. <br />
-          <span className="font-bold text-primary">
+          <span className="font-bold text-secondary">
             Customer Satisfaction
           </span>{" "}
           – Your comfort and happiness are our priority. <br />
-          <span className="font-bold text-primary">Hygiene & Care</span> – We
+          <span className="font-bold text-secondary">Hygiene & Care</span> – We
           maintain the highest standards of cleanliness and safety. <br />
-          <span className="font-bold text-primary">
+          <span className="font-bold text-secondary">
             Personalized Experience{" "}
           </span>{" "}
           – Every client is unique, and we tailor our services to meet your

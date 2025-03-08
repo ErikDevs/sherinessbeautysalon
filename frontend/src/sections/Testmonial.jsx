@@ -49,7 +49,7 @@ const testmonials = [
 
 const Testmonial = () => {
   return (
-    <section className=" bg-image py-16  w-full px-6 md:px-10 relative ">
+    <section className=" bg-image py-16  mt-16 rounded-2xl overflow-hidden w-full px-6 md:px-10 relative ">
       <h1 className="text-center font-script text-primary text-4xl">
         Testmonials
       </h1>
@@ -65,8 +65,8 @@ const Testmonial = () => {
         showDots={true}
         responsive={responsive}
       >
-        {testmonials.map((testmonial, index) => (
-          <div key={testmonial.name} className="mx-1 p-2">
+        {testmonials.map((testmonial) => (
+          <div key={testmonial.name} className="mx-1  p-2">
             <div className="w-full flex justify-center ">
               <div className="w-[4rem] h-[4rem] overflow-clip rounded-full">
                 <img
@@ -76,7 +76,7 @@ const Testmonial = () => {
                 />
               </div>
             </div>
-            <div className="bg-white -mt-8 mb-4  rounded-2xl p-6">
+            <div className="bg-purple-100 -mt-8 mb-4  rounded-2xl p-6">
               <div className="flex mt-8 justify-between">
                 <h2 className="text-xl font-script">{testmonial.name}</h2>
                 <div className="flex">
@@ -93,9 +93,9 @@ const Testmonial = () => {
         ))}
       </Carousel>
       <div className="flex w-full justify-center  mt-8">
-        <div className="flex flex-col  bg-secondary/40 drop-shadow-md text-primary p-6 rounded-2xl w-full max-w-2xl">
-          <h2 className="text-center font-bold text-2xl my-2">
-            Join Our Journey to Greatness{" "}
+        <div className="flex flex-col  bg-purple-900  drop-shadow-md text-primary p-6 rounded-2xl w-full max-w-2xl">
+          <h2 className="text-center  text-2xl my-2">
+            Join Our Journey to Greatness
           </h2>
           <form
             className="flex justify-between flex-col gap-y-2 md:flex-row text-secondary"
@@ -103,11 +103,11 @@ const Testmonial = () => {
           >
             <input
               type="text"
-              className="flex-1  w-full px-6 py-3 rounded-2xl  outline-none"
+              className="w-full px-6 py-3 rounded-xl md:rounded-none md:rounded-l-xl   outline-none"
               placeholder="Enter your email"
             />
             <button
-              className="px-6 rounded-2xl  py-3 ml-2 text-primary bg-gradient-to-tr from-pink-500 to-purple-500"
+              className="px-6 py-3 rounded-xl md:rounded-r-xl md:rounded-none text-primary bg-gradient-to-tr from-pink-500 to-purple-500"
               type="submit"
             >
               Send
@@ -115,9 +115,7 @@ const Testmonial = () => {
           </form>
         </div>
       </div>
-      <h2 className="text-center mt-8 text-primary">
-        Call/WhatsApp US: +254741051822
-      </h2>
+
     </section>
   );
 };

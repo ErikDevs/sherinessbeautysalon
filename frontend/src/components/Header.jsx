@@ -10,6 +10,7 @@ const navLinks = [
   { name: "About Us", href: "#about" },
   { name: "Our Services", href: "#services" },
   { name: "Portfolio", href: "#portfolio" },
+  { name: "FAQs", href: "#faqs" },
   { name: "Contact Us", href: "#contact" },
 ];
 
@@ -34,25 +35,23 @@ const Header = () => {
       initial={{ y: 0 }}
       animate={{ y: hidden ? "-100%" : "0%" }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className={`top-0 left-0 w-full h-20 z-50 bg-accent shadow-md transition-all duration-300 fixed
+      className={`w-full z-50 left-0 px-6 md:px-10 p-1 mx-auto bg-purple-950 drop-shadow-md text-secondary  transition-all duration-300 fixed
       }`}
     >
-      <nav className="md:flex hidden h-full justify-around items-center">
+      <nav className="md:flex hidden h-full justify-between items-center">
         <img
-          src="/sherinesslogo.png"
+          src="/sherinessLogo.png"
           width={200}
           alt="default"
           className="drop-shadow-sm"
         />
 
-        <ul className="flex gap-4 items-center">
+        <ul className="flex gap-x-4 text-sm font-normal items-center">
           {navLinks.map((navLink, index) => (
             <li
               className={`${
-                isActive == index
-                  ? "bg-slate-900  text-primary"
-                  : "bg-green-200/10"
-              } cursor-pointer px-6 py-2 rounded-full transition-colors duration-300 ease-linear`}
+                isActive === index ? "text-teal-400" : "text-white"
+              } cursor-pointer rounded-full transition-colors duration-300 ease-linear`}
               key={navLink.name}
               onClick={() => setisActive(index)}
             >
@@ -61,24 +60,24 @@ const Header = () => {
           ))}
         </ul>
         <Button
-          className="bg-gradient-to-br  drop-shadow from-yellow-500 to-orange-500 text-primary"
+          className="bg-gradient-to-br drop-shadow px-5 py-2 from-yellow-500 to-orange-500 text-primary"
           name="Book Appointment"
         />
       </nav>
 
       {/* mobile nav */}
       <nav className="md:hidden w-full">
-        <div className="flex items-center justify-between px-6 py-3">
-          <img src="/sherinesslogo.png" width={150} alt="default" />
+        <div className="flex items-center justify-between">
+          <img src="/sherinessLogo.png" width={200} alt="default" />
           {isMenuOpen ? (
             <IoIosCloseCircleOutline
-              size={48}
+              size={32}
               className="cursor-pointer mx-2 text-primary"
               onClick={() => setisMenuOpen(false)}
             />
           ) : (
             <HiMiniBars3BottomRight
-              size={48}
+              size={32}
               className="cursor-pointer mx-2 text-primary"
               onClick={() => setisMenuOpen(true)}
             />
@@ -89,9 +88,9 @@ const Header = () => {
             initial={{ opacity: 0, height: "auto" }}
             animate={{ opacity: 1, height: "100vh" }}
             transition={{ duration: 1, delay: 0, ease: "easeInOut" }}
-            className="flex bg-accent h-svh flex-col gap-y-6 items-start py-8 px-12 justify-start"
+            className="flex bg-primary h-svh flex-col gap-y-6 items-start py-8 px-12 justify-start"
           >
-            {navLinks.map((navLink, index) => (
+            {navLinks?.map((navLink, index) => (
               <li
                 key={navLink.name}
                 onClick={() => {
@@ -99,13 +98,13 @@ const Header = () => {
                   setisMenuOpen(false);
                 }}
                 className={`${
-                  isActive == index
-                    ? "bg-secondary text-primary"
-                    : "hover:bg-gray-500 "
+                  isActive === index
+                    ? "bg-accent text-primary"
+                    : "hover:bg-purple-50 "
                 }  px-5 py-4 transition-all duration-500 ease-in-out rounded-2xl  flex items-center justify-between  w-full`}
               >
                 <a href="#">{navLink.name}</a>
-                {isActive == index && (
+                {isActive === index && (
                   <span>
                     <MdArrowOutward />
                   </span>
