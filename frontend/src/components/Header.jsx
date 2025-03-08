@@ -35,7 +35,7 @@ const Header = () => {
       initial={{ y: 0 }}
       animate={{ y: hidden ? "-100%" : "0%" }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className={`w-full z-50 left-0 px-6 md:px-10 p-1 mx-auto bg-purple-950 drop-shadow-md text-secondary  transition-all duration-300 fixed
+      className={`w-full z-50 left-0 px-6 md:px-10 p-1 mx-auto bg-purple-900 drop-shadow-md text-secondary  transition-all duration-300 fixed
       }`}
     >
       <nav className="md:flex hidden h-full justify-between items-center">
