@@ -99,7 +99,7 @@ const Testmonial = () => {
             Join Our Journey to Greatness
           </h2>
           <form
-            className="flex justify-between flex-col gap-y-2 md:flex-row text-secondary"
+            className="flex drop-shadow-md justify-between flex-col gap-y-2 md:flex-row text-secondary"
             action=""
           >
             <input
@@ -108,7 +108,7 @@ const Testmonial = () => {
               placeholder="Enter your email"
             />
             <button
-              className="px-6 py-3 rounded-xl md:rounded-r-xl md:rounded-none text-primary bg-gradient-to-tr from-pink-500 to-purple-500"
+              className="px-6 py-3 rounded-xl md:rounded-r-xl md:rounded-none text-primary bg-gradient-to-tr from-pink-700 to-purple-700"
               type="submit"
             >
               Send

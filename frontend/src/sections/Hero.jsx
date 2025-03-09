@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="flex gap-4 mt-8">
               <Button
                 name="Get in touch"
-                className="cursor-pointer px-5 py-3 w-full bg-gradient-to-tr from-pink-500 to-red-500"
+                className="cursor-pointer px-5 py-3 w-full bg-gradient-to-tr from-pink-700 to-purple-700"
               />
               <Button
                 name="See our work"

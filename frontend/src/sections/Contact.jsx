@@ -2,13 +2,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-purple-600 mt-8 rounded-2xl overflow-hidden">
+    <section className="bg-purple-800 mt-8 rounded-2xl overflow-hidden">
       <div className="flex flex-col-reverse justify-end gap-4 items-center md:flex-row">
         <div className="mx-4 mb-4 md:w-full text-primary">
           <h1 className="font-script text-5xl">Ready to glow?</h1>
           <h2 className="font-medium">Book your appointment today!</h2>
           <form action="" className="flex flex-col mt-10 gap-y-2">
-            <h1 className="font-bold text-4xl">Contact Us via Email</h1>
+            <h1 className="font-bold text-4xl my-4">Contact Us via Email</h1>
             <input
               type="text"
               className="bg-purple-200 p-3 rounded-md outline-none"
@@ -33,7 +33,7 @@ const Contact = () => {
               placeholder="Message"
               id=""
             ></textarea>
-            <button className="bg-gradient-to-tr from-purple-400 to-purple-500 drop-shadow-md px-6 py-4 rounded-full mt-4 text-primary">
+            <button className="bg-gradient-to-tr from-pink-700 to-purple-700 drop-shadow-md px-6 py-4 rounded-full mt-4 text-primary">
               Send
             </button>
           </form>

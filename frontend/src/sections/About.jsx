@@ -56,25 +56,19 @@ const AboutUs = () => {
       </div>
 
       {/* commitment */}
-      <div className="mt-2 w-full p-3 bg-purple-400 flex-col rounded-xl items-center gap-8 flex justify-center ">
-        <h2 className="text-lg font-bold font-sans text-secondary">
+      <div className="mt-2 w-full p-3 bg-purple-800 flex-col rounded-xl items-center gap-8 text-primary flex justify-center ">
+        <h2 className="text-lg font-bold font-sans text-primary">
           Our Commitment
         </h2>
         <p className="text-start max-w-2xl">
-          <span className="font-bold text-secondary">Quality Service</span> – We
-          use premium products and the latest techniques to ensure the best
-          results. <br />
-          <span className="font-bold text-secondary">
-            Customer Satisfaction
-          </span>{" "}
-          – Your comfort and happiness are our priority. <br />
-          <span className="font-bold text-secondary">Hygiene & Care</span> – We
-          maintain the highest standards of cleanliness and safety. <br />
-          <span className="font-bold text-secondary">
-            Personalized Experience{" "}
-          </span>{" "}
-          – Every client is unique, and we tailor our services to meet your
-          needs.
+          <span className="font-bold ">Quality Service</span> – We use premium
+          products and the latest techniques to ensure the best results. <br />
+          <span className="font-bold ">Customer Satisfaction</span> – Your
+          comfort and happiness are our priority. <br />
+          <span className="font-bold ">Hygiene & Care</span> – We maintain the
+          highest standards of cleanliness and safety. <br />
+          <span className="font-bold ">Personalized Experience </span> – Every
+          client is unique, and we tailor our services to meet your needs.
         </p>
         <p className="max-w-2xl">
           Whether you're looking for a fresh new look or a simple touch-up, we
