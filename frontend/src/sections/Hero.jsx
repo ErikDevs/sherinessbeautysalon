@@ -22,7 +22,7 @@ const Hero = () => {
               Embrace Your Confidence
             </h1>
             <p className="text-sm leading-relaxed mt-8">
-              Welcome to Shariness Salon & Cosmetics, where elegance meets
+              Welcome to Sheriness Salon & Cosmetics, where elegance meets
               expertise. Step into a world of relaxation and transformation
               right here in Kenya. Let us pamper you with the best in beauty
               care.
