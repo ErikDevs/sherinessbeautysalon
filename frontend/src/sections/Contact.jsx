@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-purple-300 mt-16  rounded-2xl px-0 overflow-hidden md:px-0">
+    <section className="bg-purple-600 mt-16  rounded-2xl overflow-hidden">
       <div className="flex flex-col-reverse justify-end gap-4 items-center md:flex-row">
         <div className="mx-4 mb-4 md:w-full">
           <h1 className="font-script text-5xl">Ready to glow?</h1>
@@ -28,7 +28,7 @@ const Contact = () => {
             />
 
             <textarea
-              className="bg-slate-200 p-6 outline-none"
+              className="bg-slate-200 rounded-md p-6 outline-none"
               name=""
               placeholder="Message"
               id=""

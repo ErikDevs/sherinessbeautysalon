@@ -49,8 +49,8 @@ const testmonials = [
 
 const Testmonial = () => {
   return (
-    <section className=" bg-image py-16  mt-16 rounded-2xl overflow-hidden w-full px-6 md:px-10 relative ">
-      <h1 className="text-center font-script text-primary text-4xl">
+    <section className=" bg-image py-16  mt-16 rounded-2xl overflow-hidden w-full relative ">
+      <h1 className="text-center font-script text-primary  text-4xl">
         Testmonials
       </h1>
       <h2 className="text-center mt-4  text-primary">
@@ -66,9 +66,9 @@ const Testmonial = () => {
         responsive={responsive}
       >
         {testmonials.map((testmonial) => (
-          <div key={testmonial.name} className="mx-1  p-2">
+          <div key={testmonial.name} className="mx-2">
             <div className="w-full flex justify-center ">
-              <div className="w-[4rem] h-[4rem] overflow-clip rounded-full">
+              <div className="w-[5rem] h-[5rem] overflow-clip rounded-full">
                 <img
                   src={testmonial.src}
                   className="object-contain rounded-full"
@@ -93,7 +93,7 @@ const Testmonial = () => {
         ))}
       </Carousel>
       <div className="flex w-full justify-center  mt-8">
-        <div className="flex flex-col  bg-purple-900  drop-shadow-md text-primary p-6 rounded-2xl w-full max-w-2xl">
+        <div className="flex flex-col  bg-purple-900  drop-shadow-md text-primary p-6 rounded-2xl w-full md:max-w-2xl">
           <h2 className="text-center  text-2xl my-2">
             Join Our Journey to Greatness
           </h2>
@@ -115,7 +115,6 @@ const Testmonial = () => {
           </form>
         </div>
       </div>
-
     </section>
   );
 };

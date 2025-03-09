@@ -9,7 +9,7 @@ const ConatctBanner = () => {
   return (
     <section className="-mt-10 w-full ">
       <div className="justify-center flex items-center w-full ">
-        <div className="w-full p-8 flex flex-col md:flex-row gap-4 justify-around bg-gradient-to-tr from-purple-500 to-purple-700 text-primary rounded-2xl drop-shadow-lg">
+        <div className="w-full p-8 flex flex-col md:flex-row gap-4 justify-around bg-gradient-to-tr from-pink-500 to-purple-700 text-primary rounded-2xl drop-shadow-lg">
           <h2 className="flex items-center gap-x-2">
             <IoLogoWhatsapp size={32} /> | <MdAddCall size={32} /> +254
             741051822

@@ -21,18 +21,22 @@ const GridGallery = () => {
   if (images.length < 7) return <p>Loading...</p>;
 
   return (
-    <section className="mt-16 rounded-2xl bg-purple-300 p-3">
-      <h2 className="text-center text-secondary text-4xl font-script mb-8">
+    <section className="mt-8 rounded-2xl p-2 bg-purple-300">
+      <h2 className="text-center text-secondary text-4xl font-script my-4">
         Our Portfolio
       </h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="masonry-grid"
+        className="flex justify-center gap-2"
         columnClassName="masonry-column"
       >
         {images.map((src, index) => (
           <div key={index} className="masonry-item">
-            <img src={src.image} alt={`img-${index}`} className="image" />
+            <img
+              src={src.image}
+              alt={`img-${index}`}
+              className="w-full rounded-md mb-1"
+            />
           </div>
         ))}
       </Masonry>

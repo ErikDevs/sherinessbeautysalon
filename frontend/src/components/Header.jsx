@@ -60,7 +60,7 @@ const Header = () => {
           ))}
         </ul>
         <Button
-          className="bg-gradient-to-br drop-shadow px-5 py-2 from-yellow-500 to-orange-500 text-primary"
+          className="drop-shadow px-5 py-2 bg-gradient-to-tr from-pink-500 to-red-500 text-primary"
           name="Book Appointment"
         />
       </nav>

@@ -10,27 +10,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* CSS Styles (styles.css) */
-.masonry-grid {
-  display: flex;
-  margin: auto;
-  width: 100%;
-}
-
-.masonry-column {
-  padding-left: 0.8rem; /* Space between columns */
-  background-clip: padding-box;
-}
-
-.masonry-item {
-  margin-bottom: 0.8rem;
-}
-
-.image {
-  width: 100%;
-  border-radius: 1rem;
-}
-
 .hero {
   background-image: url(/herobg.png);
   background-repeat: no-repeat;
@@ -43,7 +22,3 @@ body {
 .hovered:hover .scale {
   transform: scale(1.2);
 }
-
-
-
-
