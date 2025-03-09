@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const ConatctBanner = () => {
   return (
-    <section className="w-full ">
+    <section className="-mt-20 md:mt-0 w-full ">
       <div className="justify-center flex items-center w-full ">
         <div className="w-full p-8 flex flex-col md:flex-row gap-4 justify-around bg-gradient-to-tr from-pink-500 to-purple-700 text-primary rounded-2xl drop-shadow-lg">
           <h2 className="flex items-center gap-x-2">
