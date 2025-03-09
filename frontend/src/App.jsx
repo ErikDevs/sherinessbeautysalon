@@ -15,7 +15,7 @@ function App() {
       <main className="overflow-x-hidden px-6 md:px-0 mx-auto font-sans max-w-7xl">
         <Header />
         <Hero />
-        <ConatctBanner />
+
         <AboutUs />
         <Services />
         <GridComponent />
