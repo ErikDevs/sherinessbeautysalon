@@ -63,6 +63,7 @@ const Testmonial = () => {
         focusOnSelect={true}
         autoPlay={true}
         showDots={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
         responsive={responsive}
       >
         {testmonials.map((testmonial) => (
