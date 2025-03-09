@@ -8,7 +8,7 @@ import ConatctBanner from "../components/ConatctBanner";
 const Hero = () => {
   return (
     <>
-      <section className="w-full  relative md:h-svh h-[90vh] items-center">
+      <section className="w-full  relative h-svh items-center">
         <div className="opacity-20 absolute z-o overflow-hidden h-full  top-0 right-0 drop-shadow-md md:opacity-100">
           <img src="/model3.png" className="object-contain" alt="default" />
         </div>
