@@ -1,4 +1,5 @@
 import Masonry from "react-masonry-css";
+import { motion } from "framer-motion";
 const images = [
   { image: "/image1.jpg" },
   { image: "/image2.jpg" },
@@ -21,7 +22,13 @@ const GridGallery = () => {
   if (images.length < 7) return <p>Loading...</p>;
 
   return (
-    <section id="portfolio" className="mt-16 rounded-2xl p-2 bg-purple-300">
+    <motion.section
+      initial={{ opacity: 0, y: 300 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      id="portfolio"
+      className="mt-16 rounded-2xl p-2 bg-purple-300"
+    >
       <h2 className="text-center text-secondary text-4xl font-script my-4">
         Our Portfolio
       </h2>
@@ -40,7 +47,7 @@ const GridGallery = () => {
           </div>
         ))}
       </Masonry>
-    </section>
+    </motion.section>
   );
 };
 

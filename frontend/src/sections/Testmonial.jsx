@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "../index.css";
+import { motion } from "framer-motion";
 
 const responsive = {
   superLargeDesktop: {
@@ -49,7 +49,12 @@ const testmonials = [
 
 const Testmonial = () => {
   return (
-    <section className=" bg-image py-16  mt-16 rounded-2xl overflow-hidden w-full relative ">
+    <motion.section
+      initial={{ opacity: 0, y: 300 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className=" bg-image py-16  mt-16 rounded-2xl overflow-hidden w-full relative "
+    >
       <h1 className="text-center font-script text-primary  text-4xl">
         Testmonials
       </h1>
@@ -116,7 +121,7 @@ const Testmonial = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

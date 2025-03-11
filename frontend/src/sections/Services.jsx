@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css";
+import { motion } from "framer-motion";
 
 const services = [
   { title: "Hair Services", image: "/service2.jpg" },
@@ -10,7 +11,13 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="mt-16 content md:px-0 text-primary">
+    <motion.section
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      id="services"
+      className="mt-16 content md:px-0 text-primary"
+    >
       <h2 className="font-script text-5xl text-center">Our Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-full mt-8 lg:grid-cols-3">
         {services.map((service, index) => (
@@ -32,7 +39,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

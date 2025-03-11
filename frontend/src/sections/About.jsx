@@ -1,5 +1,6 @@
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
+import { motion } from "framer-motion";
 import "../index.css";
 
 const statements = [
@@ -18,7 +19,10 @@ const statements = [
 ];
 const AboutUs = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
       id="about"
       className="mt-16 rounded-2xl p-2 drop-shadow-md bg-purple-100"
     >
@@ -78,7 +82,7 @@ const AboutUs = () => {
           ensure every visit leaves you looking and feeling your best.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

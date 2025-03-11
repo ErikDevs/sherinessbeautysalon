@@ -33,7 +33,10 @@ const FAQs = () => {
   };
 
   return (
-    <div className="md:max-w-2xl w-full mx-auto text-primary px-6 px:px-0">
+    <div
+      id="faqs"
+      className="md:max-w-2xl w-full mx-auto text-primary px-6 px:px-0"
+    >
       <h2 className="text-3xl font-bold text-center mb-6">
         Frequently Asked Questions
       </h2>

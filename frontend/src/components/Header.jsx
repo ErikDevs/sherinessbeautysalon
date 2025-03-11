@@ -60,8 +60,9 @@ const Header = () => {
           ))}
         </ul>
         <Button
-          className="drop-shadow px-5 py-2 bg-gradient-to-tr from-pink-700 to-purple-700 text-primary"
+          className="drop-shadow px-5 hover:bg-transparent hover:from-transparent hover:to-transparent hover:ring-1 ring-primary py-2 bg-gradient-to-tr from-pink-700 to-purple-700 text-primary"
           name="Book Appointment"
+          href="https://wa.me/+254741051822"
         />
       </nav>
 
