@@ -18,7 +18,10 @@ const statements = [
 ];
 const AboutUs = () => {
   return (
-    <section className="mt-8 rounded-2xl p-2 drop-shadow-md bg-purple-100">
+    <section
+      id="about"
+      className="mt-16 rounded-2xl p-2 drop-shadow-md bg-purple-100"
+    >
       {/* mission and vision */}
       <div className="flex justify-center gap-2 flex-col md:flex-row">
         <div className="flex flex-col w-full bg-purple-600 h-fit p-6 rounded-xl text-primary">

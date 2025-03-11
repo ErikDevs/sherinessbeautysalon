@@ -8,6 +8,7 @@ import Testmonial from "./sections/Testmonial";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Header from "./components/Header.jsx";
+import FAQs from "./sections/FAQs.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Services />
         <GridComponent />
         <Testmonial />
+        <FAQs />
         <Contact />
       </main>
       <Footer />

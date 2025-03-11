@@ -6,7 +6,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
 
 const navLinks = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "#" },
   { name: "About Us", href: "#about" },
   { name: "Our Services", href: "#services" },
   { name: "Portfolio", href: "#portfolio" },
@@ -21,9 +21,9 @@ const Header = () => {
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest === 0) {
       setHidden(false); // Normal state before 100
-    } else if (latest > 0 && latest < 500) {
+    } else if (latest > 0 && latest < 200) {
       setHidden(true); // Hide between 100px and 200px
-    } else if (latest > 1000) {
+    } else if (latest > 500) {
       setHidden(false); // Show after 200px
     }
   });
@@ -35,7 +35,7 @@ const Header = () => {
       initial={{ y: 0 }}
       animate={{ y: hidden ? "-100%" : "0%" }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className={`w-full z-50 left-0 px-6 md:px-10 p-1 mx-auto bg-purple-900 drop-shadow-md text-secondary  transition-all duration-300 fixed
+      className={`w-full z-50 left-0 px-6 md:px-10 p-1 mx-auto bg-purple-900 drop-shadow-md text-secondary transition-all duration-300 fixed
       }`}
     >
       <nav className="md:flex hidden h-full justify-between items-center">
@@ -51,7 +51,7 @@ const Header = () => {
             <li
               className={`${
                 isActive === index ? "text-teal-400" : "text-white"
-              } cursor-pointer rounded-full transition-colors duration-300 ease-linear`}
+              } cursor-pointer rounded-full hover:text-teal-400 transition-colors duration-300 ease-linear`}
               key={navLink.name}
               onClick={() => setisActive(index)}
             >
@@ -103,7 +103,7 @@ const Header = () => {
                     : "hover:bg-purple-50 "
                 }  px-5 py-4 transition-all duration-500 ease-in-out rounded-2xl  flex items-center justify-between  w-full`}
               >
-                <a href="#">{navLink.name}</a>
+                <a href={navLink.href}>{navLink.name}</a>
                 {isActive === index && (
                   <span>
                     <MdArrowOutward />

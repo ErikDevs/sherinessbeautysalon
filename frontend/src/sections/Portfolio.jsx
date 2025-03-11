@@ -21,7 +21,7 @@ const GridGallery = () => {
   if (images.length < 7) return <p>Loading...</p>;
 
   return (
-    <section className="mt-8 rounded-2xl p-2 bg-purple-300">
+    <section id="portfolio" className="mt-16 rounded-2xl p-2 bg-purple-300">
       <h2 className="text-center text-secondary text-4xl font-script my-4">
         Our Portfolio
       </h2>
