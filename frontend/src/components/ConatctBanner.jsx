@@ -4,6 +4,7 @@ import { MdAddCall } from "react-icons/md";
 import { IoLogoTiktok } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const ConatctBanner = () => {
   return (
