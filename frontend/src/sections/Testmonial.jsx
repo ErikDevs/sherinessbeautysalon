@@ -64,7 +64,6 @@ const Testmonial = () => {
 
       <Carousel
         className="mt-16"
-        partialVisbile={true}
         focusOnSelect={true}
         autoPlay={true}
         showDots={true}
