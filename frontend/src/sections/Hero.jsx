@@ -3,8 +3,8 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-gradient-to-tr from-violet-800 via-violet-600 overflow-hidden h-screen mx-auto  to-white">
-      <div className="max-w-7xl h-full flex justify-between items-center w-full md:flex-row flex-col-reverse mx-auto">
+    <section className="w-full bg-gradient-to-tr from-violet-800 via-violet-600 overflow-hidden mx-auto to-white">
+      <div className="max-w-7xl flex justify-between items-center w-full md:flex-row flex-col-reverse mx-auto">
         <div className="flex h-full justify-center mx-auto  px-1 flex-col max-w-xl text-primary">
           <h1 className="text-4xl font-extrabold">
             Unveil Your
@@ -21,17 +21,17 @@ const Hero = () => {
             <Button
               name="Get in touch"
               href="#contact"
-              className="cursor-pointer px-5 py-3 hover:bg-transparent hover:border w-full bg-black"
+              className="cursor-pointer px-6 py-3 hover:bg-transparent hover:border w-full bg-black"
             />
             <Button
               name="See our work"
               href="#portfolio"
-              className="cursor-pointer hover:bg-black hover:border-none px-5 border py-3 bg-transparent "
+              className="cursor-pointer hover:bg-black hover:border-none px-6 border py-3 bg-transparent "
             />
           </div>
         </div>
 
-        <div className="overflow-hidden w-[20rem] md:w-[32rem]">
+        <div className="overflow-hidden w-[20rem] md:w-[24rem]">
           <img
             src="/model3.png"
             className="object-contain w-full h-full"

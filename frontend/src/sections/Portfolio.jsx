@@ -64,7 +64,7 @@ const GridGallery = () => {
         {images.map((src, index) => (
           <div
             key={index}
-            className="h-[28rem] flex justify-center mx-2 items-center overflow-hidden"
+            className="h-[28rem] flex rounded-md justify-center mx-2 items-center overflow-hidden"
           >
             <img
               src={src.image}
