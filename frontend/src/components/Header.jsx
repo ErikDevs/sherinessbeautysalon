@@ -35,7 +35,7 @@ const Header = () => {
       initial={{ y: 0 }}
       animate={{ y: hidden ? "-100%" : "0%" }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className={`w-full z-50 left-0 px-6 md:px-10 p-1 mx-auto bg-purple-900 drop-shadow-md text-secondary transition-all duration-300 fixed
+      className={`w-full z-50 left-0 px-6 md:px-10  p-2 mx-auto bg-violet-600 drop-shadow-md text-secondary transition-all duration-300 fixed
       }`}
     >
       <nav className="md:flex hidden h-full justify-between items-center">
@@ -60,7 +60,7 @@ const Header = () => {
           ))}
         </ul>
         <Button
-          className="drop-shadow px-5 hover:bg-transparent hover:from-transparent hover:to-transparent hover:ring-1 ring-primary py-2 bg-gradient-to-tr from-pink-700 to-purple-700 text-primary"
+          className="px-5 hover:bg-transparent  hover:ring-1 ring-primary py-3 bg-black text-primary"
           name="Book Appointment"
           href="https://wa.me/+254741051822"
         />

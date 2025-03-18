@@ -18,8 +18,10 @@ const Services = () => {
       id="services"
       className="mt-16 content md:px-0 text-primary"
     >
-      <h2 className="font-script text-5xl text-center">Our Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-full mt-8 lg:grid-cols-3">
+      <h2 className="font-script text-5xl dark:text-white text-black text-center">
+        Our Services
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-full mt-8 max-w-7xl lg:grid-cols-3">
         {services.map((service, index) => (
           <div
             key={index}

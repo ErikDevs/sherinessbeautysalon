@@ -9,22 +9,22 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Header from "./components/Header.jsx";
 import FAQs from "./sections/FAQs.jsx";
+import ConatctBanner from "./components/ConatctBanner";
 
 function App() {
   return (
-    <>
+    <main className="mx-auto w-full font-sans">
       <Header />
-      <main className="overflow-x-hidden px-2 md:px-0 mx-auto font-sans max-w-7xl">
-        <Hero />
-        <AboutUs />
-        <Services />
-        <GridComponent />
-        <Testmonial />
-        <FAQs />
-        <Contact />
-      </main>
+      <Hero />
+      <ConatctBanner />
+      <AboutUs />
+      <Services />
+      <GridComponent />
+      <Testmonial />
+      <FAQs />
+      <Contact />
       <Footer />
-    </>
+    </main>
   );
 }
 

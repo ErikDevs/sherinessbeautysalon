@@ -1,5 +1,6 @@
 import Masonry from "react-masonry-css";
 import { motion } from "framer-motion";
+import Carousel from "react-multi-carousel";
 const images = [
   { image: "/image1.jpg" },
   { image: "/image2.jpg" },
@@ -17,6 +18,26 @@ const breakpointColumnsObj = {
   500: 1,
 };
 
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
 const GridGallery = () => {
   // Ensure we have at least 7 images for the grid
   if (images.length < 7) return <p>Loading...</p>;
@@ -27,26 +48,32 @@ const GridGallery = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       id="portfolio"
-      className="mt-16 rounded-2xl p-2 bg-purple-300"
+      className="mt-16 p-2 min-h-screen w-full mx-auto bg-violet-500"
     >
       <h2 className="text-center text-secondary text-4xl font-script my-4">
         Our Portfolio
       </h2>
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="flex justify-center gap-2"
-        columnClassName="masonry-column"
+      <Carousel
+        className="mt-16 max-w-7xl w-full mx-auto"
+        focusOnSelect={true}
+        autoPlay={true}
+        showDots={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        responsive={responsive}
       >
         {images.map((src, index) => (
-          <div key={index} className="masonry-item">
+          <div
+            key={index}
+            className="h-[28rem] flex justify-center mx-2 items-center overflow-hidden"
+          >
             <img
               src={src.image}
               alt={`img-${index}`}
-              className="w-full rounded-md mb-1"
+              className="w-full h-full object-cover rounded-md mb-1"
             />
           </div>
         ))}
-      </Masonry>
+      </Carousel>
     </motion.section>
   );
 };

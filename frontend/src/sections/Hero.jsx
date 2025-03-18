@@ -1,22 +1,17 @@
-import Header from "../components/Header";
-import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
-
 import "../index.css";
 import Button from "../components/Button";
-import ConatctBanner from "../components/ConatctBanner";
 
 const Hero = () => {
   return (
-    <>
-      <section className="w-full relative h-screen flex flex-col justify-between">
-        {/*hero text section*/}
-        <div className="flex h-full justify-center px-1 z-30 flex-col max-w-xl text-primary">
-          <h1 className="text-5xl font-bold">
-            Unveil Your{" "}
-            <span className="font-script text-5xl text-accent">Beauty</span>,
-            Embrace Your Confidence
+    <section className="w-full bg-gradient-to-tr from-violet-800 via-violet-600 overflow-hidden h-screen mx-auto  to-white">
+      <div className="max-w-7xl h-full flex justify-between items-center w-full md:flex-row flex-col-reverse mx-auto">
+        <div className="flex h-full justify-center mx-auto  px-1 flex-col max-w-xl text-primary">
+          <h1 className="text-4xl font-extrabold">
+            Unveil Your
+            <span className="font-script text-5xl text-black"> Beauty, </span>
+            Embrace Your Confidence.
           </h1>
-          <p className="text-base leading-relaxed mt-8">
+          <p className="text-base leading-loose mt-8">
             Welcome to Sheriness Salon & Cosmetics, where elegance meets
             expertise. Step into a world of relaxation and transformation right
             here in Kenya. Let us pamper you with the best in beauty care.
@@ -26,25 +21,25 @@ const Hero = () => {
             <Button
               name="Get in touch"
               href="#contact"
-              className="cursor-pointer px-5 py-3 hover:bg-transparent hover:from-transparent hover:to-transparent hover:ring-1 ring-primary w-full bg-gradient-to-tr from-pink-700 to-purple-700"
+              className="cursor-pointer px-5 py-3 hover:bg-transparent hover:border w-full bg-black"
             />
             <Button
               name="See our work"
               href="#portfolio"
-              className="cursor-pointer hover:bg-gradient-to-tr hover:from-pink-700 hover:to-purple-700 text-sprimary w-full hover:ring-0 px-5 py-3 bg-transparent ring-1 ring-purple-100"
+              className="cursor-pointer hover:bg-black hover:border-none px-5 border py-3 bg-transparent "
             />
           </div>
         </div>
-        <div className="opacity-60 h-full overflow-hidden w-[512px] absolute top-0 right-0 md:opacity-100">
+
+        <div className="overflow-hidden w-[20rem] md:w-[32rem]">
           <img
             src="/model3.png"
-            className="object-cover w-full h-full"
+            className="object-contain w-full h-full"
             alt="default"
           />
         </div>
-        <ConatctBanner />
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
