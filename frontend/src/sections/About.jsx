@@ -24,7 +24,7 @@ const AboutUs = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       id="about"
-      className="mt-16 rounded-2xl p-2 drop-shadow-md bg-purple-100"
+      className="mt-16 p-2 drop-shadow-md bg-purple-100"
     >
       <div className="max-w-7xl w-full mx-auto">
         {/* mission and vision */}
