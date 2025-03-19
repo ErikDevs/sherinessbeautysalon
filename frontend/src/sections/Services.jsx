@@ -15,10 +15,11 @@ const Services = () => {
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
       id="services"
-      className="mt-16 content md:px-0 text-primary"
+      className="mt-16 min-h-screen content md:px-0 text-primary"
     >
-      <h2 className="font-script text-5xl dark:text-white text-black text-center">
+      <h2 className="font-script text-5xl font-semibold dark:text-white text-black text-center">
         Our Services
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-full mt-8 max-w-7xl lg:grid-cols-3">

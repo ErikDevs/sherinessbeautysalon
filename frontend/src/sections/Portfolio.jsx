@@ -47,10 +47,11 @@ const GridGallery = () => {
       initial={{ opacity: 0, y: 300 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
       id="portfolio"
       className="mt-16 p-2 min-h-screen w-full mx-auto bg-violet-500"
     >
-      <h2 className="text-center text-secondary text-4xl font-script my-4">
+      <h2 className="text-center text-secondary text-4xl font-semibold font-script my-4">
         Our Portfolio
       </h2>
       <Carousel

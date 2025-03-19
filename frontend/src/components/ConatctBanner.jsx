@@ -12,7 +12,7 @@ const ConatctBanner = () => {
       id="contactBanner"
       className="justify-center flex w-full items-center"
     >
-      <div className="w-full px-12 py-8 flex flex-col md:flex-row gap-4 justify-around bg-black text-primary z-10">
+      <div className="w-full px-12 py-8 flex flex-col md:flex-row gap-4 justify-around bg-black text-primary">
         <h2 className="flex items-center gap-x-2">
           <IoLogoWhatsapp size={32} /> | <MdAddCall size={32} /> +254 741051822
         </h2>

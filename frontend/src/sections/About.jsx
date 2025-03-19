@@ -23,13 +23,14 @@ const AboutUs = () => {
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
       id="about"
-      className="mt-16 p-2 drop-shadow-md bg-purple-100"
+      className="bg-violet-500 items-center flex p-2 min-h-screen drop-shadow-md"
     >
       <div className="max-w-7xl w-full mx-auto">
         {/* mission and vision */}
         <div className="flex  justify-center gap-2 flex-col  md:flex-row">
-          <div className="flex flex-col w-full bg-violet-600 h-fit p-6 rounded-xl text-primary">
+          <div className="flex flex-col w-full bg-black h-fit p-6 rounded-xl text-primary">
             <h1 className="font-script text-5xl text-secondary ">About Us</h1>
             <p className="py-9 leading-relaxed">
               At Sheriness Beauty Salon, we believe that beauty is more than

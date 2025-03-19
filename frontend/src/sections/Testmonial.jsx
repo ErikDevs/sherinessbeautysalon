@@ -53,9 +53,10 @@ const Testmonial = () => {
       initial={{ opacity: 0, y: 300 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className=" bg-image py-16  mt-16 rounded-2xl overflow-hidden w-full relative "
+      viewport={{ once: true }}
+      className=" bg-image py-16 min-h-screen  mt-16 rounded-2xl overflow-hidden w-full relative "
     >
-      <h1 className="text-center font-script text-black text-4xl">
+      <h1 className="text-center font-script font-semibold text-black text-4xl">
         Testmonials
       </h1>
       <h2 className="text-center mt-4  text-black">
@@ -98,7 +99,7 @@ const Testmonial = () => {
         ))}
       </Carousel>
       <div className="flex w-full justify-center  mt-8">
-        <div className="flex flex-col  bg-violet-600  drop-shadow-md text-primary p-6 rounded-2xl w-full md:max-w-2xl">
+        <div className="flex flex-col  bg-violet-500  drop-shadow-md text-primary p-6 rounded-2xl w-full md:max-w-2xl">
           <h2 className="text-center  text-2xl my-2">
             Join Our Journey to Greatness
           </h2>

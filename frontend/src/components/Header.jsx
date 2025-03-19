@@ -46,11 +46,11 @@ const Header = () => {
           className="drop-shadow-sm"
         />
 
-        <ul className="flex gap-x-4 text-sm font-normal items-center">
+        <ul className="flex gap-x-4 text-base font-normal items-center">
           {navLinks.map((navLink, index) => (
             <li
               className={`${
-                isActive === index ? "text-teal-400" : "text-white"
+                isActive === index ? "text-black" : "text-white"
               } cursor-pointer rounded-full hover:text-teal-400 transition-colors duration-300 ease-linear`}
               key={navLink.name}
               onClick={() => setisActive(index)}

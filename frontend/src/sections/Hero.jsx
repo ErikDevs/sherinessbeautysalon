@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-gradient-to-tr from-violet-800 via-violet-600 overflow-hidden mx-auto to-white">
+    <section className="w-full overflow-hidden min-h-screen mx-auto bg-black">
       <div className="max-w-7xl flex pb-6 md:pb-0 justify-between items-center w-full md:flex-row flex-col-reverse mx-auto">
         <div className="flex h-full justify-center mx-auto  px-1 flex-col max-w-xl text-primary">
           <h1 className="text-4xl font-extrabold">
@@ -20,12 +20,12 @@ const Hero = () => {
             <Button
               name="Get in touch"
               href="#contact"
-              className="cursor-pointer px-6 py-3 hover:bg-transparent hover:border w-full bg-black"
+              className="cursor-pointer px-6 py-3 hover:bg-transparent hover:border-2 w-full bg-violet-500"
             />
             <Button
               name="See our work"
               href="#portfolio"
-              className="cursor-pointer hover:bg-black hover:border-none px-6 border py-3 bg-transparent "
+              className="cursor-pointer hover:bg-violet-500 hover:border-none px-6 border-2 py-3 bg-transparent "
             />
           </div>
         </div>
