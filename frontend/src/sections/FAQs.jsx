@@ -35,9 +35,9 @@ const FAQs = () => {
   return (
     <div
       id="faqs"
-      className="md:max-w-2xl w-full mx-auto text-black px-6 px:px-0"
+      className="md:max-w-2xl mt-16 w-full mx-auto text-black px-6 px:px-0"
     >
-      <h2 className="text-3xl font-bold text-center mb-6">
+      <h2 className="text-4xl font-bold font-script text-center mb-6">
         Frequently Asked Questions
       </h2>
       <div className="space-y-4">

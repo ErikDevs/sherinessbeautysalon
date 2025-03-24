@@ -4,10 +4,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-violet-600 mt-16 min-h-screen flex items-center overflow-hidden"
+      className="bg-purple-500 mt-16 min-h-screen flex items-center overflow-hidden"
     >
       <div className="flex  max-w-7xl w-full mx-auto flex-col-reverse justify-end gap-4 items-center md:flex-row">
-        <div className="mx-4 mb-4 md:w-full text-primary">
+        <div className="mx-4 mb-4 px-3 w-full text-primary">
           <h1 className="font-script font-semibold text-5xl">Ready to glow?</h1>
           <h2 className="font-medium">Book your appointment today!</h2>
           <form action="" className="flex flex-col mt-10 gap-y-2">

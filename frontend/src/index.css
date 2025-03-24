@@ -22,3 +22,40 @@ html {
 .hovered:hover .scale {
   transform: scale(1.2);
 }
+
+.bg-image {
+  background-image: url(/heroBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.85;
+}
+
+.show-arrow:hover .hasArrow {
+  display: block;
+}
+
+.bg-image-1 {
+  background-image: url(/modern-beauty-salon-interior.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-image-1::before {
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
+}

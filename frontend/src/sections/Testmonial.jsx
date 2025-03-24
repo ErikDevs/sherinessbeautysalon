@@ -54,14 +54,16 @@ const Testmonial = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className=" bg-image py-16 min-h-screen  mt-16 rounded-2xl overflow-hidden w-full relative "
+      className="bg-image-1 py-16 min-h-screen mt-16 rounded-2xl overflow-hidden w-full relative"
     >
-      <h1 className="text-center font-script font-semibold text-black text-4xl">
-        Testmonials
-      </h1>
-      <h2 className="text-center mt-4  text-black">
-        What Clients are saying about Us
-      </h2>
+      <div className="absolute top-0 w-full mt-8">
+        <h1 className="text-center font-script font-semibold text-primary text-4xl">
+          Testmonials
+        </h1>
+        <h2 className="text-center mt-4  text-primary">
+          What Clients are saying about Us
+        </h2>
+      </div>
 
       <Carousel
         className="mt-16 max-w-7xl w-full mx-auto"
@@ -82,7 +84,7 @@ const Testmonial = () => {
                 />
               </div>
             </div>
-            <div className="bg-violet-500 text-white -mt-8 mb-4  rounded-2xl p-6">
+            <div className="bg-purple-500 text-white -mt-8 mb-4  rounded-2xl p-6">
               <div className="flex mt-8 justify-between">
                 <h2 className="text-xl font-script">{testmonial.name}</h2>
                 <div className="flex">
@@ -98,8 +100,8 @@ const Testmonial = () => {
           </div>
         ))}
       </Carousel>
-      <div className="flex w-full justify-center  mt-8">
-        <div className="flex flex-col  bg-violet-500  drop-shadow-md text-primary p-6 rounded-2xl w-full md:max-w-2xl">
+      <div className="flex w-full justify-center px-3   mt-8">
+        <div className="flex flex-col  bg-purple-500  drop-shadow-md text-primary p-6 rounded-2xl w-full md:max-w-2xl">
           <h2 className="text-center  text-2xl my-2">
             Join Our Journey to Greatness
           </h2>

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "rgb(243 232 255)", // White in HEX
+        primary: "#fff", // White in HEX
         secondary: "#000000", // Black in HEX
         accent: "rgb(168 85 247 )", // Tailwind's pink-500 HEX equivalent
       },

@@ -49,7 +49,7 @@ const GridGallery = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
       id="portfolio"
-      className="mt-16 p-2 min-h-screen w-full mx-auto bg-violet-500"
+      className="mt-16 p-2 min-h-screen w-full mx-auto"
     >
       <h2 className="text-center text-secondary text-4xl font-semibold font-script my-4">
         Our Portfolio
@@ -65,12 +65,12 @@ const GridGallery = () => {
         {images.map((src, index) => (
           <div
             key={index}
-            className="h-[28rem] flex rounded-md justify-center mx-2 items-center overflow-hidden"
+            className="h-[32rem] flex rounded-2xl justify-center mx-2 items-center overflow-hidden"
           >
             <img
               src={src.image}
               alt={`img-${index}`}
-              className="w-full h-full object-cover rounded-md mb-1"
+              className="w-full h-auto object-top object-cover rounded-md mb-1"
             />
           </div>
         ))}

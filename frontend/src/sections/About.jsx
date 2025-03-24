@@ -25,13 +25,13 @@ const AboutUs = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
       id="about"
-      className="bg-violet-500 items-center flex p-2 min-h-screen drop-shadow-md"
+      className=" items-center flex p-2 min-h-screen drop-shadow-md"
     >
       <div className="max-w-7xl w-full mx-auto">
         {/* mission and vision */}
         <div className="flex  justify-center gap-2 flex-col  md:flex-row">
-          <div className="flex flex-col w-full bg-black h-fit p-6 rounded-xl text-primary">
-            <h1 className="font-script text-5xl text-secondary ">About Us</h1>
+          <div className="flex flex-col w-full bg-purple-500 p-6 rounded-xl text-primary">
+            <h1 className="font-script md:text-5xl text-4xl">About Us</h1>
             <p className="py-9 leading-relaxed">
               At Sheriness Beauty Salon, we believe that beauty is more than
               just appearance—its about feeling confident, refreshed, and
@@ -66,25 +66,38 @@ const AboutUs = () => {
 
         {/* commitment */}
 
-        <div className="mt-2 flex-1 p-3 bg-black flex-col rounded-xl items-center gap-8 text-primary flex  ">
-          <h2 className="text-lg font-bold font-sans text-primary">
-            Our Commitment
-          </h2>
-          <p className="text-start max-w-2xl">
-            <span className="font-bold ">Quality Service</span> – We use premium
-            products and the latest techniques to ensure the best results.{" "}
-            <br />
-            <span className="font-bold ">Customer Satisfaction</span> – Your
-            comfort and happiness are our priority. <br />
-            <span className="font-bold ">Hygiene & Care</span> – We maintain the
-            highest standards of cleanliness and safety. <br />
-            <span className="font-bold ">Personalized Experience </span> – Every
-            client is unique, and we tailor our services to meet your needs.
-          </p>
-          <p className="max-w-2xl">
-            Whether you're looking for a fresh new look or a simple touch-up, we
-            ensure every visit leaves you looking and feeling your best.
-          </p>
+        <div className="mt-2 overflow-clip justify-center p-3 bg-black flex-col rounded-xl items-center gap-8 text-primary flex md:flex-row  ">
+          <div className="flex-col  flex">
+            <h2 className="text-4xl text-center my-4 font-semibold font-script text-primary">
+              Our Commitment
+            </h2>
+            <p className="my-2">
+              <span className="font-bold my-2 leading-relaxed ">
+                Quality Service
+              </span>
+              – We use premium products and the latest techniques to ensure the
+              best results.
+            </p>
+            <p className="my-2">
+              <span className="font-bold  leading-relaxed ">
+                Customer Satisfaction
+              </span>{" "}
+              -Your comfort and happiness are our priority.
+            </p>
+            <p className="my-2">
+              <span className="font-bold leading-relaxed ">Hygiene & Care</span>{" "}
+              – We maintain the highest standards of cleanliness and safety.
+            </p>
+            <p className="my-2">
+              <span className="font-bold ">Personalized Experience</span> –
+              Every client is unique, and we tailor our services to meet your
+              needs.
+            </p>
+            <p className="max-w-2xl my-4">
+              Whether you're looking for a fresh new look or a simple touch-up,
+              we ensure every visit leaves you looking and feeling your best.
+            </p>
+          </div>
         </div>
       </div>
     </motion.section>

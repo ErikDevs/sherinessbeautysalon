@@ -17,7 +17,7 @@ const Services = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
       id="services"
-      className="mt-16 min-h-screen content md:px-0 text-primary"
+      className="mt-16 min-h-screen content md:px-0 bg-slate-100 py-6 rounded-xl text-primary"
     >
       <h2 className="font-script text-5xl font-semibold dark:text-white text-black text-center">
         Our Services
@@ -26,7 +26,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative border-spacing-0 border-b-4 border-r-4 border-purple-500 hovered bg-accent rounded-2xl shadow-md overflow-clip"
+            className="relative border-spacing-0 border-b-4 border-r-4 hovered bg-accent rounded-2xl shadow-md overflow-clip"
           >
             <div className="absolute w-full h-full z-0 opacity-75 inset-0 bg-black"></div>
             <div className="absolute  inset-0 w-full h-full flex items-center justify-center z-20">
