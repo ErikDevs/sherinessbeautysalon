@@ -54,74 +54,51 @@ const Testmonial = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="bg-image-1 py-16 min-h-screen mt-16 rounded-2xl overflow-hidden w-full relative"
+      className="bg-image-1 py-16 min-h-screen  mt-16 rounded-2xl overflow-hidden w-full relative"
     >
-      <div className="absolute top-0 w-full mt-8">
+      <div className="flex items-center relative justify-center flex-col  ">
         <h1 className="text-center font-script font-semibold text-primary text-4xl">
           Testmonials
         </h1>
-        <h2 className="text-center mt-4  text-primary">
+        <h2 className="text-center mt-4 text-primary">
           What Clients are saying about Us
         </h2>
-      </div>
 
-      <Carousel
-        className="mt-16 max-w-7xl w-full mx-auto"
-        focusOnSelect={true}
-        autoPlay={true}
-        showDots={true}
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        responsive={responsive}
-      >
-        {testmonials.map((testmonial) => (
-          <div key={testmonial.name} className="mx-2">
-            <div className="w-full flex justify-center ">
-              <div className="w-[5rem] h-[5rem] overflow-clip border-4 border-white rounded-full">
-                <img
-                  src={testmonial.src}
-                  className="object-contain rounded-full"
-                  alt="default"
-                />
-              </div>
-            </div>
-            <div className="bg-purple-500 text-white -mt-8 mb-4  rounded-2xl p-6">
-              <div className="flex mt-8 justify-between">
-                <h2 className="text-xl font-script">{testmonial.name}</h2>
-                <div className="flex">
-                  {Array(testmonial.rating)
-                    .fill("⭐")
-                    .map((rating, index) => (
-                      <div key={index}>{rating}</div>
-                    ))}
+        <Carousel
+          className="mt-16 max-w-7xl  w-full mx-auto"
+          focusOnSelect={true}
+          autoPlay={true}
+          showDots={true}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          responsive={responsive}
+        >
+          {testmonials.map((testmonial) => (
+            <div key={testmonial.name} className="mx-2">
+              <div className="w-full flex justify-center ">
+                <div className="w-[5rem] h-[5rem] overflow-clip  rounded-full">
+                  <img
+                    src={testmonial.src}
+                    className="object-contain"
+                    alt="default"
+                  />
                 </div>
               </div>
-              <p className="mt-2">{testmonial.testmony}</p>
+              <div className="bg-primary text-secondary -mt-12 mb-4  rounded-2xl p-6">
+                <div className="flex mt-8 justify-between">
+                  <h2 className="text-base">{testmonial.name}</h2>
+                  <div className="flex">
+                    {Array(testmonial.rating)
+                      .fill("⭐")
+                      .map((rating, index) => (
+                        <div key={index}>{rating}</div>
+                      ))}
+                  </div>
+                </div>
+                <p className="mt-2">{testmonial.testmony}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
-      <div className="flex w-full justify-center px-3   mt-8">
-        <div className="flex flex-col  bg-purple-500  drop-shadow-md text-primary p-6 rounded-2xl w-full md:max-w-2xl">
-          <h2 className="text-center  text-2xl my-2">
-            Join Our Journey to Greatness
-          </h2>
-          <form
-            className="flex drop-shadow-md justify-between flex-col gap-y-2 md:flex-row text-secondary"
-            action=""
-          >
-            <input
-              type="text"
-              className="w-full px-6 py-3 rounded-xl md:rounded-none md:rounded-l-xl   outline-none"
-              placeholder="Enter your email"
-            />
-            <button
-              className="px-6 py-3 rounded-xl md:rounded-r-xl md:rounded-none text-primary bg-black"
-              type="submit"
-            >
-              Send
-            </button>
-          </form>
-        </div>
+          ))}
+        </Carousel>
       </div>
     </motion.section>
   );

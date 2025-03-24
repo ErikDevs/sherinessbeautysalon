@@ -9,7 +9,7 @@ export default {
         accent: "rgb(168 85 247 )", // Tailwind's pink-500 HEX equivalent
       },
       fontFamily: {
-        script: ["MonteCarlo", "cursive"],
+        script: ["Mr Bedfort", "cursive"],
         sans: ["Inter", "sans-serif"],
       },
     },

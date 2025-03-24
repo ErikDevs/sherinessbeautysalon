@@ -8,7 +8,9 @@ const Contact = () => {
     >
       <div className="flex  max-w-7xl w-full mx-auto flex-col-reverse justify-end gap-4 items-center md:flex-row">
         <div className="mx-4 mb-4 px-3 w-full text-primary">
-          <h1 className="font-script font-semibold text-5xl">Ready to glow?</h1>
+          <h1 className="font-script font-semibold text-4xl my-4">
+            Ready to glow?
+          </h1>
           <h2 className="font-medium">Book your appointment today!</h2>
           <form action="" className="flex flex-col mt-10 gap-y-2">
             <h1 className="font-bold text-4xl my-4">Contact Us via Email</h1>
