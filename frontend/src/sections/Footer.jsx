@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="mt-16 ">
+    <section className="mt-16  ">
       <h2 className="text-5xl text-center text-black font-semibold font-script my-4">
         We are located at
       </h2>
@@ -10,7 +10,7 @@ const Footer = () => {
         title="Google Map of Ruiru, Kenya"
         width="600"
         height="450"
-        className="w-full"
+        className="w-full h-screen"
         loading="lazy"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"

@@ -3,20 +3,20 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <section className="w-full relative py-6 min-h-screen">
+    <section className="w-full relative py-6 md:h-[100vh] overflow-hidden">
       <div className="bg-image inset-0 -z-10 absolute"></div>
-      <div className="flex flex-col-reverse justify-between items-center md:flex-row">
-        <div className="mx-auto h-full flex-col md:w-1/2 px-4 md:px-0 text-primary">
-          <h1 className="text-4xl md:text-6xl text-center md:text-left font-bold">
+      <div className="flex flex-col-reverse justify-between overflow-hidden items-center md:flex-row">
+        <div className="mx-auto h-full flex-col md:max-w-4xl px-4 md:px-0 text-primary">
+          <h1 className="text-4xl md:text-7xl  text-center md:text-left font-bold">
             Unveil Your Beauty, Embrace Your Confidence
           </h1>
-          <p className="text-base leading-loose text-center md:text-left my-4">
+          <p className="text-base leading-loose text-center max-w-xl md:text-left mt-8">
             Welcome to Sheriness Salon & Cosmetics, where elegance meets
             expertise. Step into a world of relaxation and transformation right
             here in Kenya. Let us pamper you with the best in beauty care.
           </p>
 
-          <div className="flex gap-4 w-full md:flex-row flex-col mt-8">
+          <div className="flex gap-4 w-full md:flex-row flex-col mt-16">
             <Button
               name="Get in touch"
               href="#contact"
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="overflow-hidden w-[250px] md:mt-12 md:w-[24rem]">
+        <div className="overflow-hidden md:mt-12 max-w-sm md:max-w-lg">
           <img
             src="/model3.png"
             className="object-cover w-full h-full"

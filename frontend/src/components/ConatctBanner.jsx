@@ -10,7 +10,7 @@ const ConatctBanner = () => {
   return (
     <motion.div
       id="contactBanner"
-      className="justify-center flex w-full rounded-b-xl items-center"
+      className="justify-center flex w-full  rounded-b-xl items-center"
     >
       <div className="w-full px-12 py-8 flex flex-col md:flex-row gap-4 justify-around bg-purple-500 text-primary">
         <h2 className="flex items-center gap-x-2">

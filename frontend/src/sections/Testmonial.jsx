@@ -54,7 +54,7 @@ const Testmonial = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="bg-image-1 py-16 min-h-screen  mt-16 rounded-2xl overflow-hidden w-full relative"
+      className="bg-image-1 py-16 mt-16 rounded-2xl overflow-hidden w-full relative"
     >
       <div className="flex items-center relative justify-center flex-col  ">
         <h1 className="text-center font-script font-semibold text-primary text-4xl">
