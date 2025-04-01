@@ -1,4 +1,3 @@
-import Masonry from "react-masonry-css";
 import { motion } from "framer-motion";
 import Carousel from "react-multi-carousel";
 const images = [
@@ -10,13 +9,6 @@ const images = [
   { image: "/image6.jpg" },
   { image: "/image7.jpg" },
 ];
-
-const breakpointColumnsObj = {
-  default: 4,
-  1100: 3,
-  700: 2,
-  500: 1,
-};
 
 const responsive = {
   superLargeDesktop: {
@@ -49,18 +41,20 @@ const GridGallery = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
       id="portfolio"
-      className="mt-16 p-2 min-h-screen w-full mx-auto"
+      className="mt-16 p-2 w-full mx-auto"
     >
       <h2 className="text-center text-secondary text-4xl font-semibold font-script my-4">
         Our Portfolio
       </h2>
       <Carousel
-        className="mt-16 max-w-7xl w-full mx-auto"
-        focusOnSelect={true}
-        autoPlay={true}
         showDots={true}
-        removeArrowOnDeviceType={["tablet", "mobile"]}
         responsive={responsive}
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={3000}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        className="max-w-7xl mx-auto w-full pb-8"
       >
         {images.map((src, index) => (
           <div
@@ -70,7 +64,7 @@ const GridGallery = () => {
             <img
               src={src.image}
               alt={`img-${index}`}
-              className="w-full h-auto object-top object-cover rounded-md mb-1"
+              className="w-full h-full object-top object-cover rounded-md mb-1"
             />
           </div>
         ))}

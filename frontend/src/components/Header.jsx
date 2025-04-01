@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./Button";
-import { useMotionValueEvent, motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
@@ -16,30 +16,24 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false);
+  const [isScrolled, setisScrolled] = useState(false);
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest === 0) {
-      setHidden(false); // Normal state before 100
-    } else if (latest > 0 && latest < 200) {
-      setHidden(true); // Hide between 100px and 200px
-    } else if (latest > 500) {
-      setHidden(false); // Show after 200px
+  useEffect(() => {
+    if (window.scrollY > 0) {
+      setisScrolled(true);
     }
-  });
+  }, [isScrolled]);
 
   const [isMenuOpen, setisMenuOpen] = useState(false);
   const [isActive, setisActive] = useState(0);
   return (
     <motion.header
-      initial={{ y: 0 }}
-      animate={{ y: hidden ? "-100%" : "0%" }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
-      className={`w-full z-50 left-0 px-6 md:px-10  py-5  mx-auto bg-black drop-shadow-md text-secondary transition-all duration-300 md:fixed
+      className={`${
+        isScrolled ? "opacity-85" : "opacity-100"
+      } w-full z-50 py-5  mx-auto px-2 bg-black drop-shadow-md text-secondary transition-all duration-300 fixed
       }`}
     >
-      <nav className="md:flex hidden h-full justify-between items-center">
+      <nav className="md:flex hidden h-full max-w-7xl w-full mx-auto justify-between items-center">
         <img
           src="/sherinessLogo.png"
           width={200}
@@ -60,11 +54,6 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <Button
-          className=" px-5 hover:bg-transparent hover:ring-1 ring-primary py-2 bg-purple-500 text-primary"
-          name="Book Appointment"
-          href="https://wa.me/+254741051822"
-        />
       </nav>
 
       {/* mobile nav */}
@@ -87,8 +76,8 @@ const Header = () => {
         </div>
         {isMenuOpen && (
           <motion.ul
-            initial={{ opacity: 0, height: "auto" }}
-            animate={{ opacity: 1, height: "100vh" }}
+            initial={{ opacity: 0, height: "-100%" }}
+            animate={{ opacity: 1, height: "100%" }}
             transition={{ duration: 1, delay: 0, ease: "easeInOut" }}
             className="flex text-primary h-svh flex-col gap-y-6 items-start py-8 px-12 justify-start"
           >

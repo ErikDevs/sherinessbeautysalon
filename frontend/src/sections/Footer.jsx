@@ -10,7 +10,7 @@ const Footer = () => {
         title="Google Map of Ruiru, Kenya"
         width="600"
         height="450"
-        className="w-full h-screen"
+        className="w-full"
         loading="lazy"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"

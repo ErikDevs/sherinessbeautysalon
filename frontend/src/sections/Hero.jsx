@@ -3,36 +3,38 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <section className="w-full relative py-6 md:h-[100vh] overflow-hidden">
+    <section className="w-full relative py-8 overflow-hidden h-auto md:h-screen">
       <div className="bg-image inset-0 -z-10 absolute"></div>
-      <div className="flex flex-col-reverse justify-between overflow-hidden items-center md:flex-row">
-        <div className="mx-auto h-full flex-col md:max-w-4xl px-4 md:px-0 text-primary">
-          <h1 className="text-4xl md:text-7xl  text-center md:text-left font-bold">
-            Unveil Your Beauty, Embrace Your Confidence
-          </h1>
-          <p className="text-base leading-loose text-center max-w-xl md:text-left mt-8">
-            Welcome to Sheriness Salon & Cosmetics, where elegance meets
-            expertise. Step into a world of relaxation and transformation right
-            here in Kenya. Let us pamper you with the best in beauty care.
-          </p>
-
-          <div className="flex gap-4 w-full md:flex-row flex-col mt-16">
+      <div className="flex flex-col-reverse max-w-7xl px-2 h-full  w-full mx-auto  justify-between gap-8 overflow-hidden items-center md:flex-row">
+        <div className="mx-auto h-full  flex-col w-full justify-center flex px-4 md:px-0 text-primary">
+          <div className="flex flex-col w-full">
+            <h1 className="text-5xl lg:text-6xl text-center md:text-left font-extrabold">
+              Unveil Your Beauty, Embrace Your Confidence
+            </h1>
+            <p className="text-base leading-loose text-center  max-w-xl md:text-left mt-8">
+              Welcome to Sheriness Salon & Cosmetics, where elegance meets
+              expertise. Step into a world of relaxation and transformation
+              right here in Kenya. Let us pamper you with the best in beauty
+              care.
+            </p>
+          </div>
+          <div className="flex gap-4 md:flex-row py-2 flex-col mt-16">
             <Button
               name="Get in touch"
               href="#contact"
-              className="cursor-pointer px-6 py-3 hover:bg-transparent hover:border-2 w-full bg-purple-500"
+              className="cursor-pointer md:w-[250px] hover:bg-transparent hover:ring-2 ring-purple-500 w-full bg-purple-500"
             />
             <Button
               name="See our work"
               href="#portfolio"
-              className="cursor-pointer w-full hover:bg-violet-500 hover:border-none px-6 border-2 py-3 bg-transparent "
+              className="cursor-pointer w-full md:w-[250px] hover:bg-purple-500 hover:border-none ring-2 ring-purple-500  bg-transparent "
             />
           </div>
         </div>
 
-        <div className="overflow-hidden md:mt-12 max-w-sm md:max-w-lg">
+        <div className="overflow-hidden w-full">
           <img
-            src="/model3.png"
+            src="/heropng.png"
             className="object-cover w-full h-full"
             alt="default"
           />

@@ -32,14 +32,42 @@ const testmonials = [
       "I always leave Shariness Beauty Salon feeling like a queen! The staff is friendly, and their services are top-notch.",
   },
   {
-    src: "/model1.jpg",
+    src: "/model2.jpg",
     name: "Mary N",
     rating: 5,
     testmony:
       "I always leave Shariness Beauty Salon feeling like a queen! The staff is friendly, and their services are top-notch.",
   },
   {
+    src: "/model3.png",
+    name: "Mary N",
+    rating: 5,
+    testmony:
+      "I always leave Shariness Beauty Salon feeling like a queen! The staff is friendly, and their services are top-notch. ",
+  },
+  {
     src: "/model1.jpg",
+    name: "Mary N",
+    rating: 5,
+    testmony:
+      "I always leave Shariness Beauty Salon feeling like a queen! The staff is friendly, and their services are top-notch. ",
+  },
+  {
+    src: "/model3.png",
+    name: "Mary N",
+    rating: 5,
+    testmony:
+      "I always leave Shariness Beauty Salon feeling like a queen! The staff is friendly, and their services are top-notch. ",
+  },
+  {
+    src: "/model4.jpg",
+    name: "Mary N",
+    rating: 5,
+    testmony:
+      "I always leave Shariness Beauty Salon feeling like a queen! The staff is friendly, and their services are top-notch. ",
+  },
+  {
+    src: "/model3.png",
     name: "Mary N",
     rating: 5,
     testmony:
@@ -54,26 +82,28 @@ const Testmonial = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="bg-image-1 py-16 mt-16 rounded-2xl overflow-hidden w-full relative"
+      className="py-16 mt-16 rounded-2xl overflow-hidden bg-slate-200 w-full relative"
     >
       <div className="flex items-center relative justify-center flex-col  ">
-        <h1 className="text-center font-script font-semibold text-primary text-4xl">
+        <h1 className="text-center text-secondary font-script font-semibold  text-4xl">
           Testmonials
         </h1>
-        <h2 className="text-center mt-4 text-primary">
+        <h2 className="text-center mt-4 text-secondary">
           What Clients are saying about Us
         </h2>
 
         <Carousel
-          className="mt-16 max-w-7xl  w-full mx-auto"
-          focusOnSelect={true}
-          autoPlay={true}
           showDots={true}
-          removeArrowOnDeviceType={["tablet", "mobile"]}
           responsive={responsive}
+          infinite={true}
+          autoPlaySpeed={3000}
+          autoPlay={true}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          className="max-w-7xl mx-auto py-16 w-full flex justify-between gap-8 items-center"
         >
           {testmonials.map((testmonial) => (
-            <div key={testmonial.name} className="mx-2">
+            <div key={testmonial.name} className="m-4">
               <div className="w-full flex justify-center ">
                 <div className="w-[5rem] h-[5rem] overflow-clip  rounded-full">
                   <img
@@ -85,7 +115,9 @@ const Testmonial = () => {
               </div>
               <div className="bg-primary text-secondary -mt-12 mb-4  rounded-2xl p-6">
                 <div className="flex mt-8 justify-between">
-                  <h2 className="text-base">{testmonial.name}</h2>
+                  <h2 className="text-base text-secondary">
+                    {testmonial.name}
+                  </h2>
                   <div className="flex">
                     {Array(testmonial.rating)
                       .fill("⭐")
@@ -94,7 +126,7 @@ const Testmonial = () => {
                       ))}
                   </div>
                 </div>
-                <p className="mt-2">{testmonial.testmony}</p>
+                <p className="my-4 leading-relaxed">{testmonial.testmony}</p>
               </div>
             </div>
           ))}

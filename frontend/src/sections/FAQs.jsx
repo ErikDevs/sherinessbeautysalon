@@ -33,11 +33,15 @@ const FAQs = () => {
   };
 
   return (
-    <div
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeIn" }}
+      viewport={{ once: true }}
       id="faqs"
-      className="md:max-w-2xl mt-16 w-full  mx-auto text-black px-6 px:px-0"
+      className="max-w-7xl my-32 w-full mx-auto text-black px-6 px:px-0"
     >
-      <h2 className="text-4xl font-bold font-script text-center mb-6">
+      <h2 className="text-4xl font-bold font-script text-center my-16">
         Frequently Asked Questions
       </h2>
       <div className="space-y-4">
@@ -72,7 +76,7 @@ const FAQs = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.section>
   );
 };
 
