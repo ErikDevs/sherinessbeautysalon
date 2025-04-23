@@ -18,7 +18,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 4,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -43,23 +43,21 @@ const GridGallery = () => {
       id="portfolio"
       className="mt-16 p-2 w-full mx-auto"
     >
-      <h2 className="text-center text-secondary text-4xl font-semibold font-script my-4">
+      <h2 className="text-center text-secondary text-3xl font-semibold font-script my-4">
         Our Portfolio
       </h2>
       <Carousel
         showDots={true}
         responsive={responsive}
         infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={3000}
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
-        className="max-w-7xl mx-auto w-full pb-8"
+        className="max-w-7xl mx-auto w-full"
       >
         {images.map((src, index) => (
           <div
             key={index}
-            className="h-[32rem] flex rounded-2xl justify-center mx-2 items-center overflow-hidden"
+            className="h-[24rem] my-8 flex rounded-2xl justify-center mx-2 items-center overflow-hidden"
           >
             <img
               src={src.image}

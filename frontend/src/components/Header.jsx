@@ -16,32 +16,42 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const [isScrolled, setisScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    if (window.scrollY > 0) {
-      setisScrolled(true);
-    }
-  }, [isScrolled]);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Run on mount
+    handleScroll();
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const [isMenuOpen, setisMenuOpen] = useState(false);
   const [isActive, setisActive] = useState(0);
   return (
     <motion.header
       className={`${
-        isScrolled ? "opacity-85" : "opacity-100"
-      } w-full z-50 py-5  mx-auto px-2 bg-black drop-shadow-md text-secondary transition-all duration-300 fixed
+        isScrolled ? " opacity-75" : "opacity-100"
+      } w-full z-40 mx-auto px-2 h-12 fixed transition-all duration-300 bg-black
       }`}
     >
-      <nav className="md:flex hidden h-full max-w-7xl w-full mx-auto justify-between items-center">
+      <nav className="md:flex h-full hidden max-w-7xl w-full mx-auto justify-between items-center">
         <img
           src="/sherinessLogo.png"
-          width={200}
+          width={150}
           alt="default"
           className="drop-shadow-sm"
         />
 
-        <ul className="flex gap-x-4 text-base font-normal items-center">
+        <ul className="flex gap-4 text-sm items-center">
           {navLinks.map((navLink, index) => (
             <li
               className={`${

@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="mt-16  ">
-      <h2 className="text-5xl text-center text-black font-semibold font-script my-4">
+      <h2 className="text-3xl text-center text-black font-semibold font-script my-4">
         We are located at
       </h2>
       <iframe

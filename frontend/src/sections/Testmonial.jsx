@@ -82,13 +82,13 @@ const Testmonial = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="py-16 mt-16 rounded-2xl overflow-hidden bg-slate-200 w-full relative"
+      className="py-16 mt-16 rounded-2xl overflow-hidden  w-full relative"
     >
       <div className="flex items-center relative justify-center flex-col  ">
-        <h1 className="text-center text-secondary font-script font-semibold  text-4xl">
+        <h1 className="text-center text-secondary font-script font-bold text-4xl">
           Testmonials
         </h1>
-        <h2 className="text-center mt-4 text-secondary">
+        <h2 className="text-center  text-secondary">
           What Clients are saying about Us
         </h2>
 
@@ -96,28 +96,30 @@ const Testmonial = () => {
           showDots={true}
           responsive={responsive}
           infinite={true}
-          autoPlaySpeed={3000}
+          autoPlaySpeed={5000}
           autoPlay={true}
-          removeArrowOnDeviceType={["tablet", "mobile"]}
+          shouldResetAutoplay={true}
+          removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
           dotListClass="custom-dot-list-style"
           className="max-w-7xl mx-auto py-16 w-full flex justify-between gap-8 items-center"
         >
           {testmonials.map((testmonial) => (
-            <div key={testmonial.name} className="m-4">
-              <div className="w-full flex justify-center ">
-                <div className="w-[5rem] h-[5rem] overflow-clip  rounded-full">
-                  <img
-                    src={testmonial.src}
-                    className="object-contain"
-                    alt="default"
-                  />
-                </div>
-              </div>
-              <div className="bg-primary text-secondary -mt-12 mb-4  rounded-2xl p-6">
+            <div key={testmonial.name} className="m-4 border rounded-lg">
+              <div className="w-full flex justify-center "></div>
+              <div className=" text-secondary py-2 px-4 rounded-md">
                 <div className="flex mt-8 justify-between">
-                  <h2 className="text-base text-secondary">
-                    {testmonial.name}
-                  </h2>
+                  <div className="flex items-center gap-4">
+                    <div className="w-[2rem] h-[2rem] overflow-hidden ring ring-offset-1 ring-accent rounded-full">
+                      <img
+                        src={testmonial.src}
+                        className="object-contain"
+                        alt="default"
+                      />
+                    </div>
+                    <h2 className="text-base font-bold text-secondary">
+                      {testmonial.name}
+                    </h2>
+                  </div>
                   <div className="flex">
                     {Array(testmonial.rating)
                       .fill("⭐")
@@ -126,7 +128,9 @@ const Testmonial = () => {
                       ))}
                   </div>
                 </div>
-                <p className="my-4 leading-relaxed">{testmonial.testmony}</p>
+                <p className="my-8 text-sm max-w-xs text-slate-500 leading-relaxed">
+                  {testmonial.testmony}
+                </p>
               </div>
             </div>
           ))}

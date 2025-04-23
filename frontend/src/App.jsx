@@ -12,7 +12,7 @@ import ConatctBanner from "./components/ConatctBanner";
 
 function App() {
   return (
-    <main className="mx-auto w-full font-sans text-white">
+    <main className="mx-auto w-full font-sans ">
       <Header />
       <Hero />
       <ConatctBanner />

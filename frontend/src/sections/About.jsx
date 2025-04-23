@@ -2,6 +2,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 import { motion } from "framer-motion";
 import "../index.css";
+import Commitement from "../components/Commitement";
 
 const statements = [
   {
@@ -25,14 +26,14 @@ const AboutUs = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       viewport={{ once: true }}
       id="about"
-      className=" items-center flex p-2 min-h-screen drop-shadow-md"
+      className=" items-center flex p-2"
     >
       <div className="max-w-7xl w-full mx-auto">
         {/* mission and vision */}
         <div className="flex  justify-center gap-2 flex-col  md:flex-row">
-          <div className="flex flex-col w-full bg-purple-500 p-6 rounded-xl text-primary">
-            <h1 className="font-script md:text-5xl text-4xl">About Us</h1>
-            <p className="py-9 leading-relaxed">
+          <div className="flex flex-col w-full bg-purple-500 p-6 rounded-md text-primary">
+            <h1 className="font-bold text-4xl">About Us</h1>
+            <p className="py-9 text-sm leading-relaxed">
               At Sheriness Beauty Salon, we believe that beauty is more than
               just appearance—its about feeling confident, refreshed, and
               empowered. Our experienced stylists and beauty experts are
@@ -43,7 +44,7 @@ const AboutUs = () => {
           {statements?.map((statement, index) => (
             <div
               key={index}
-              className=" flex  h-[300px] flex-col hovered bg-purple-100/60 rounded-xl  overflow-clip justify-center items-center relative"
+              className=" flex  h-[300px] flex-col hovered  rounded-md  overflow-clip justify-center items-center relative"
             >
               <img
                 src={statement.src}
@@ -58,46 +59,10 @@ const AboutUs = () => {
                   </i>
                   {statement.title}
                 </h2>
-                <p className="mt-8 text-primary">{statement.text}</p>
+                <p className="mt-8 text-base text-primary">{statement.text}</p>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* commitment */}
-
-        <div className="mt-2 overflow-clip justify-center p-3 bg-black flex-col rounded-xl items-center gap-8 text-primary flex md:flex-row  ">
-          <div className="flex-col  flex">
-            <h2 className="text-4xl text-center my-4 font-semibold font-script text-primary">
-              Our Commitment
-            </h2>
-            <p className="my-2">
-              <span className="font-bold my-2 leading-relaxed ">
-                Quality Service
-              </span>
-              – We use premium products and the latest techniques to ensure the
-              best results.
-            </p>
-            <p className="my-2">
-              <span className="font-bold  leading-relaxed ">
-                Customer Satisfaction
-              </span>{" "}
-              -Your comfort and happiness are our priority.
-            </p>
-            <p className="my-2">
-              <span className="font-bold leading-relaxed ">Hygiene & Care</span>{" "}
-              – We maintain the highest standards of cleanliness and safety.
-            </p>
-            <p className="my-2">
-              <span className="font-bold ">Personalized Experience</span> –
-              Every client is unique, and we tailor our services to meet your
-              needs.
-            </p>
-            <p className="max-w-2xl my-4">
-              Whether you're looking for a fresh new look or a simple touch-up,
-              we ensure every visit leaves you looking and feeling your best.
-            </p>
-          </div>
         </div>
       </div>
     </motion.section>
